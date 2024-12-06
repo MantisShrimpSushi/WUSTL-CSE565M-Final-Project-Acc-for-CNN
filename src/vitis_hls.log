@@ -1,0 +1,113 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.2 (64-bit)
+  **** SW Build 5238294 on Nov  8 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Wed Dec  4 12:13:26 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source C:/Applications/Xilinx/Vitis/2024.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'lenovo' on host 'graf-zeppelin' (Windows NT_amd64 version 10.0) on Wed Dec 04 12:13:27 +0800 2024
+INFO: [HLS 200-10] In directory 'C:/Programming/C/HLS-CNN/Code/05-Vitis-HLS'
+WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl
+Sourcing Tcl script 'create_project.tcl'
+INFO: [HLS 200-1510] Running: open_project Project 
+INFO: [HLS 200-10] Creating and opening project 'C:/Programming/C/HLS-CNN/Code/05-Vitis-HLS/Project'.
+INFO: [HLS 200-1510] Running: set_top cnn 
+INFO: [HLS 200-1510] Running: add_files cnn.cc 
+INFO: [HLS 200-10] Adding design file 'cnn.cc' to the project
+INFO: [HLS 200-1510] Running: add_files conv.cc 
+INFO: [HLS 200-10] Adding design file 'conv.cc' to the project
+INFO: [HLS 200-1510] Running: add_files dense.cc 
+INFO: [HLS 200-10] Adding design file 'dense.cc' to the project
+INFO: [HLS 200-1510] Running: add_files flat.cc 
+INFO: [HLS 200-10] Adding design file 'flat.cc' to the project
+INFO: [HLS 200-1510] Running: add_files pool.cc 
+INFO: [HLS 200-10] Adding design file 'pool.cc' to the project
+INFO: [HLS 200-1510] Running: add_files utils.cc 
+INFO: [HLS 200-10] Adding design file 'utils.cc' to the project
+INFO: [HLS 200-1510] Running: add_files -tb cnn_tb.cc 
+INFO: [HLS 200-10] Adding test bench file 'cnn_tb.cc' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../02-Data 
+INFO: [HLS 200-10] Adding test bench file '../02-Data' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening solution 'C:/Programming/C/HLS-CNN/Code/05-Vitis-HLS/Project/solution1'.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7a200tfbg484-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7a200t-fbg484-1'
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: source directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name cnn cnn 
+WARNING: [HLS 200-484] The 'set_directive_top -name' command is deprecated and will be removed in a future release.
+WARNING: [HLS 200-484] The 'set_directive_top -location' command is deprecated and will be removed in a future release.
+INFO: [HLS 200-1510] Running: set_directive_dataflow dataflow_section 
+INFO: [HLS 200-1510] Running: set_directive_dataflow convolutional_layer 
+INFO: [HLS 200-1510] Running: set_directive_dataflow max_pooling_layer 
+INFO: [HLS 200-1510] Running: set_directive_dataflow flattening_layer 
+INFO: [HLS 200-1510] Running: set_directive_dataflow dense_layer 
+INFO: [HLS 200-1510] Running: set_directive_pipeline -II 32 convolution/conv_for_cols 
+INFO: [HLS 200-1510] Running: set_directive_pipeline -II 4 max_pooling/pool_for_cols 
+INFO: [HLS 200-1510] Running: set_directive_pipeline -II 10 dense/dense_for_flat 
+[2Kvitis_hls> [11C
+[2Kvitis_hls> [11C
+[2Kvitis_hls> [11C
+[2Kvitis_hls> [11C
+[2Kvitis_hls> [11C
+[2Kvitis_hls> [11C
+[2Kvitis_hls> [11C
+[2Kvitis_hls> [11C
+
+[2Kvitis_hls> [11C
+
+
+
+
+[2Kvitis_hls> [11C
+
+
+
+
+
+
+
+
+
+
+
+
+[2Kvitis_hls> [11C
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[2Kvitis_hls> [11C
+[2Kvitis_hls> [11C
